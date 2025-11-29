@@ -316,7 +316,6 @@ class _MyHomePageState extends State<MyHomePage> {
                               onPressed: quantity > 0 ? () => _decreaseQuantity(food.id!) : null,
                             ),
                             Text('$quantity', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-                            // **CRITICAL UI CHANGE**: Disable button if budget is insufficient
                             IconButton(
                               icon: Icon(Icons.add_circle, color: canAddItem ? Colors.green : Colors.grey),
                               onPressed: canAddItem ? () => _increaseQuantity(food) : null,
